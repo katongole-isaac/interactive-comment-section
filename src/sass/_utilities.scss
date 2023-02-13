@@ -1,0 +1,12 @@
+@mixin flex-box($dir: row, $gap: 1em) {
+  display: flex;
+  flex-direction: $dir;
+  gap: $gap;
+}
+
+@mixin lighter($color, $opacity: 0.8, $amount: 10%) {
+  &:hover {
+    color: lighten($color, $amount);
+    opacity: $opacity;
+  }
+}

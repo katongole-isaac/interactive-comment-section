@@ -1,0 +1,19 @@
+.personal-info {
+  @include flex-box($gap: 0.8em);
+  align-items: center;
+  .user-name {
+    font-weight: 700;
+    @include flex-box($gap: 10px);
+
+    small {
+      background: $moderate-blue;
+      padding: 0 5px;
+      border-radius: 3px;
+      color: $white;
+      font-weight: 700;
+    }
+  }
+  .time {
+    color: $grayish-blue;
+  }
+}

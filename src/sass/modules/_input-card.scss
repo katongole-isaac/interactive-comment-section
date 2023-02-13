@@ -1,0 +1,34 @@
+.input-card {
+  @include flex-box;
+  background: $white;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  width: 100%;
+
+  &.bottom {
+    max-width: inherit;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .input-section {
+    flex: 1;
+    form {
+      @include flex-box;
+      align-items: center;
+    }
+
+    .input-error {
+      
+      outline: 1px solid $soft-red;
+    }
+  }
+
+  .aside {
+    @include flex-box;
+    align-items: flex-start;
+    padding: 0.2em;
+  }
+
+  margin-bottom: 2em;
+}

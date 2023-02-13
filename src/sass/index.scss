@@ -1,5 +1,23 @@
-$color :  palevioletred;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 
-.text-pink {
-    color: $color;
-}
+// @import "bootstrap/scss/bootstrap.scss";
+
+@import "./variable";
+
+@import "./utilities";
+
+@import "./base/reset";
+
+@import "./layout/main.scss";
+
+@import "./modules/comment";
+
+@import "./modules/card-side-controls";
+
+@import "./modules/card-controls";
+
+@import "./modules/personal-info";
+
+@import "./modules/input-card";
+
+@import "./modules/replies-section";

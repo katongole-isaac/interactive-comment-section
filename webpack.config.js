@@ -8,7 +8,7 @@ const json5 = require("json5");
 const webpack = require("webpack");
 
 const cssRegExp = /\.(css)$/i;
-const imageRegExp = /\.(png|svg|gif|jpe?g)$/i;
+const imageRegExp = /\.(webp|png|svg|gif|jpe?g)$/i;
 const jsExtensions = ["*", ".js", ".jsx"];
 
 module.exports = {
@@ -72,7 +72,7 @@ module.exports = {
         },
       },
       {
-        test: /\.json5$/i,
+        test: /\.(json|json5)$/i,
         type: "json",
         parser: {
           parse: json5.parse,

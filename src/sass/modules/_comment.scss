@@ -1,0 +1,29 @@
+.comment-card {
+  width: 100%;
+  background: $white;
+  @include flex-box;
+  padding: 1.4em;
+  border-radius: 10px;
+  min-height: 150px;
+  margin-bottom: 1em;
+
+  .card-content {
+    flex: 1;
+    @include flex-box($dir: column);
+
+    .comment-header {
+      @include flex-box;
+      width: 100%;
+      background: transparent;
+      justify-content: space-between;
+
+      & > div:first-child {
+        @include flex-box;
+      }
+    }
+  }
+
+  .card-body-text {
+    color:$grayish-blue;
+  }
+}

@@ -1,0 +1,8 @@
+.container {
+  & > div:first-child {
+  }
+  .emptyDiv {
+    height: calc(100vh - 90%);
+    margin-top: 1em;
+  }
+}

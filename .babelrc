@@ -1,6 +1,7 @@
 {
   "presets": ["@babel/env", "@babel/preset-react"],
   "plugins": [
+    "inline-json-import",
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-transform-react-jsx-source"
   ] // Enabling the babel parses dynamic import not transforming them.
